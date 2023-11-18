@@ -1,6 +1,8 @@
 cifar10_data/
 *.npy
 .idea/
+*.zip
+__MACOSX/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
