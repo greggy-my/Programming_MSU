@@ -38,11 +38,11 @@ def r2(y_true, y_pred):
     return r_squared
 
 
-files_list = os.listdir('Task_3')
+files_list = os.listdir('../datasets/Task_3')
 best_model_score = -np.inf
 worst_model_score = np.inf
 for index, file in enumerate(files_list):
-    path = f'Task_3/{file}'
+    path = f'../datasets/Task_3/{file}'
     data = np.load(path)
     y = data[:, 1:]
     x = data[:, 0:1]
