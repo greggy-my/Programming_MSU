@@ -168,3 +168,4 @@ cython_debug/
 /datasets/simpsons_data/
 /test.py
 /datasets/onegin.txt
+/datasets/car-segmentation/
