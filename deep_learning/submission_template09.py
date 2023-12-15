@@ -203,7 +203,7 @@ class UNet(nn.Module):
 
 
 def train(model, opt, loss_fn, epochs, train_loader, val_loader):
-    for epoch in tqdm(range(epochs)):
+    for _ in tqdm(range(epochs)):
 
         # 1. Обучаем сеть на картинках из train_loader
         model.train()  # train mode
@@ -284,7 +284,7 @@ model = UNet(3, 5).to(device)
 loss = nn.CrossEntropyLoss()
 opt = torch.optim.Adam(model.parameters(), lr=1e-3)
 # запускаем обучение на 10 эпох
-train(model, opt, loss, 25, train_loader, val_loader)
+train(model, opt, loss, 35, train_loader, val_loader)
 
 # наша задача — многоклассовая сегментация, поэтому параметрtask='multiclass'
 # также нужно задать количество классов — в нашем случае их 5
