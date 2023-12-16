@@ -169,3 +169,4 @@ cython_debug/
 /test.py
 /datasets/onegin.txt
 /datasets/car-segmentation/
+/datasets/lfw-deepfunneled/
